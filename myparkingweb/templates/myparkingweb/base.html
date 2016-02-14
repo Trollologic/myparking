@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <title>Myparking</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/myparkingweb.css' %}">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div>
+    <div class="page-header">
+        <h1>Parking in your pocket</h1>
+        <img src="{% static 'images/web_logo.png' %}" alt="logo" height="60" width="60" align="right">
+    </div>
+
+
+    <div>
+    </div>
+    <div class="about_us_section">
+        <div class="row">
+            <h1>About app</h1>
+            <p>Idea of this app is to provide information about parkings around you, to speed up parking search in unknown city or unknown neighborhood, to make parking spot shareable and rateable. In our database we have more than 3 000 000 parking spot locations and descriptions all around the globe. App is still in development mode, but we are hoping that you will find it useful and easy usable. Currently only <a href="https://play.google.com/store">ANDROID application exists</a>, but we have idea to publish it on IOS and WINDOWS phone platforms, but as you can guess we are a group of enthusiasts so you will have to be more patient about other platforms :) We are opened for critics and suggestions. As a number of parkings all around the world is not countable, there is possibility that we do not have parking spots in city you need, but feel free to contact us and we will try to find as many parkings we will be able to :) Your homework will be to share parkings if you know for some parking spot that we don't have in our database. Enjoy the app :)</p>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="row">
+            <h1>Send us some feedback</h1>
+            <form method="POST" class="post-form">{% csrf_token %}
+                {{ form.as_p }}
+                <input class="save_button" onclick="return confirm('Are you sure?')"  type="submit" class="save btn btn-default"/>
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

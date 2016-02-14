@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Myparking</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="">Parking in your pocket</a></h1>
+{% extends 'myparkingweb/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaks }}</p>
         </div>
-    </body>
-</html>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,91 @@
+
+
+.page-header {
+    background-color: #214A87;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+h1{
+    font-size: 25pt;
+}
+
+p{
+    font-size: 15pt;
+}
+
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+.about_us_section h1, .about_us_section p{
+    padding: 20px 80px 20px 80px;
+    color: #000;
+    text-decoration: none;
+}
+.content-container{
+    padding: 20px 80px 20px 80px;
+}
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
+
+.date {
+    float: right;
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+.save_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	box-shadow:inset 0px 1px 0px 0px #214A87;
+	background-color:#214A87;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+}
+.save_button:hover {
+	background-color:#0061a7;
+}
+.save_button:active {
+	position:relative;
+	top:1px;
+}

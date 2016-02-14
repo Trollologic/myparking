@@ -1,0 +1,10 @@
+{% extends 'myparkingweb/base.html' %}
+
+{% block content %}
+    {% for about_detail in about_details %}
+        <div class="datails">
+            <h1><a href="">{{ about_detail.title }}</a></h1>
+            <p>{{ about_detail.text|linebreaks }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
