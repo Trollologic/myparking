@@ -21,7 +21,7 @@ p{
     text-decoration: none;
 }
 .about_us_section h1, .about_us_section p{
-    padding: 20px 80px 20px 80px;
+    padding: 0px 80px 0px 80px;
     color: #000;
     text-decoration: none;
 }
@@ -88,4 +88,17 @@ h1, h2, h3, h4 {
 .save_button:active {
 	position:relative;
 	top:1px;
+}
+
+.expand_button {
+    font-size: 15pt;
+	background-color:#ffffff;
+	cursor:pointer;
+	color:#0061a7;
+	font-family:Arial;
+	text-decoration:none;
+
+}
+.expand_button:hover {
+color:#214A87;
 }

@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="{% static 'css/myparkingweb.css' %}">
     <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -23,7 +26,17 @@
     <div class="about_us_section">
         <div class="row">
             <h1>About app</h1>
-            <p>Idea of this app is to provide information about parkings around you, to speed up parking search in unknown city or unknown neighborhood, to make parking spot shareable and rateable. In our database we have more than 3 000 000 parking spot locations and descriptions all around the globe. App is still in development mode, but we are hoping that you will find it useful and easy usable. Currently only <a href="https://play.google.com/store">ANDROID application exists</a>, but we have idea to publish it on IOS and WINDOWS phone platforms, but as you can guess we are a group of enthusiasts so you will have to be more patient about other platforms :) We are opened for critics and suggestions. As a number of parkings all around the world is not countable, there is possibility that we do not have parking spots in city you need, but feel free to contact us and we will try to find as many parkings we will be able to :) Your homework will be to share parkings if you know for some parking spot that we don't have in our database. Enjoy the app :)</p>
+
+            <p>Idea of this app is to provide information about parkings around you, to speed up parking search in unknown city or unknown neighborhood, to make parking spot shareable and rateable. In our database we have more than 3 000 000 parking spot locations and descriptions all around the globe.<a id="colapse_button" onclick="javascript:changeText()" type="button" class="expand_button" data-toggle="collapse" data-target="#demo"> Read more...</a><p id="demo" class="collapse">App is still in development mode, but we are hoping that you will find it useful and easy usable. Currently only <a href="https://play.google.com/store">ANDROID application exists</a>, but we have idea to publish it on IOS and WINDOWS phone platforms, but as you can guess we are a group of enthusiasts so you will have to be more patient about other platforms :) We are opened for critics and suggestions. As a number of parkings all around the world is not countable, there is possibility that we do not have parking spots in city you need, but feel free to contact us and we will try to find as many parkings we will be able to :) Your homework will be to share parkings if you know for some parking spot that we don't have in our database. Enjoy the app :)</p></p>
+            <script type="text/javascript">
+            function changeText() {
+                var element = document.getElementById('colapse_button');
+                    if (element.innerHTML === ' Read more...') element.innerHTML = ' Close...';
+                    else {
+                    element.innerHTML = ' Read more...';
+                    }
+            }
+    </script>
         </div>
     </div>
     <div class="content-container">
